@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Publcation list</title>
+    <script type="text/javascript" src="ga.js"></script>
+    <link rel="stylesheet" href="publist.css">
+      <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+      <script type="text/javascript" src="constants.js"></script>
+      <script type="text/javascript" src="body.js"></script>
+
+      <!-- To show LaTeX formats Ref:https://yuis-programming.com/?p=395, https://www.mathjax.org/-->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script>
+	MathJax = {
+	chtml: {
+	matchFontHeight: false
+	},
+	tex: {
+	inlineMath: [['$', '$']]
+	}
+	};
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <!-- Script to retrieve xml values to publist-->
+      <script type="text/javascript" src="readxml.js"></script>
+    </head>
+
+    <body> <!--class="archive date col-2-right fixed loggedin browser-chrome"-->
+
+      <div id="page">
+
+	<div id="main">
+	  <div id="header"></div>
+	  <div id="publist"></div><!--load readxml.js-->
+	  <div id="footer"></div>
+
+	</div><!--main-->
+
+      </div><!--page-->
+
+    </body>
+</html>

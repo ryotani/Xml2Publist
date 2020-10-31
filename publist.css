@@ -1,0 +1,131 @@
+/*/ @import "http://www.finefinefine.jp/date/2010/10/?mystique=css";*/
+
+#header-wrapper {
+  height: 60px;
+}
+#header {
+  height: 60px;
+}
+#site-title {
+  padding: 10px 0 0 0;
+}
+#site-title #logo {
+  line-height: 60px;
+  padding: 0;
+  font-size: 400%;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0;
+  float: left;
+}
+#site-title p.headline {
+  line-height: 64px;
+  letter-spacing: 0.4em;
+  padding: 0.2em 0 0.2em 0.8em;
+  font-size: 140%;
+  font-weight: normal;
+  margin: 0 0 0 1em;
+  float: left;
+  border-left: solid 1px #999;
+  color: #aaa;
+}
+h5 {
+  margin-top: 20px;
+}
+#main {
+  clear: left;
+  margin: 20px auto;
+  padding: 5px 20px;
+  width: 800px;
+}
+#header {
+/*  margin: 10px auto 400px auto; */
+  width: 800px;
+  padding: 20px;  
+  font-size: 20px;  
+}
+#footer {
+/*  margin: 10px auto 400px auto; */
+  width: 800px;
+  padding: 20px;
+  color: #666;
+  font-size: 15px;
+}
+h3 {
+  font-size: 20px;
+}
+#publist {
+  /* margin: 10px auto auto auto;*/
+  width: 800px;
+  padding: 20px;
+}
+#publist li {
+  padding: 5px;
+ /* border-bottom: solid 1px #ccc;*/
+}
+#publist ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    width: 80%;
+    
+}
+/* for ul/li https://note.com/tell_me/n/n5ea0bbfd4bd3*/
+/*
+.c-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%; }
+.c-header .c-header__inner {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 3.125rem;
+    width: 1000px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 35px 35px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 6.125rem; }
+
+.c-header__nav ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end; }
+
+.c-header__nav li {
+    margin-right: 2.25rem; }
+.c-header__nav li:last-child {
+    margin-right: 0; }
+
+.c-header__nav a {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 1em 0;
+    position: relative; }
+.c-header__nav a:hover {
+    opacity: 1; }
+.c-header__nav a:hover::after {
+    opacity: 1; }
+.c-header__nav a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity .2s ease 0s; }
+
+.c-header__logo img {
+    width: 75px;
+    margin-bottom: 5px;
+    vertical-align: top;}
+*/
