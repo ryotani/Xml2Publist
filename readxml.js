@@ -1,3 +1,4 @@
+var counterother = 0;
 $(function(){
     $.ajax({
 	url:XMLFile,
@@ -19,10 +20,10 @@ $(function(){
 	    for (year = thisyear; year >= StartYear; year--){
 		PubListOfYear(xml, year, 'Journal Article');
 	    }
-	    var counterother = 0;
 	    for (year = thisyear; year >= StartYear; year--){
 		PubListOfYear(xml, year, '');
 	    }
+	    counterother = 0;
 	    PubListOfYear(xml, 0, '');
 	    //
 	    MathJax.typesetPromise(); //REF: http://docs.mathjax.org/en/latest/advanced/typeset.html 'MathJax in Dynamic Content'
@@ -33,13 +34,21 @@ $(function(){
 function PubListOfYear(xml, year, type) {
     var counter = 0;
     $(xml).find("record").each(function() {
-	if ((year == $(this).find('year').text() && ( $(this).find('ref-type').attr("name") == type ||(type == '' && $(this).find('ref-type').attr("name") != 'Journal Article' )))){
-	    if(counter++ == 0){
-		$("#publist").append('<div><h3><a id="' + year + '">Publications in ' + year + '</a></h3>');
+	if (year == $(this).find('year').text()){
+	    if ($(this).find('ref-type').attr("name") == type ){
+		if (counter++ == 0){
+		    $("#publist").append('<div><h3><a id="' + year + '">Publications in ' + year + '</a></h3>');
+		}
+	    }else if(type == '' && ($(this).find('ref-type').attr("name") != 'Journal Article') ){
+		if(counterother++ == 0){
+		    $("#publist").append('<div><h3><a id="otherpub">Other publications</a></h3>');
+		}
+	    }else{
+		return true;
 	    }
 	}else if (year == 0 && !($(this).find('year').text() <= thisyear && $(this).find('year').text() >= StartYear)){
 	    if(counterother++ == 0){
-		$("#publist").append('<div><h3><a id="otherpub">Other publications</a></h3>');
+		$("#publist").append('<div><h3><a id="">Uncategorised publications</a></h3>');
 	    }
 	}else{
 	    return true;
