@@ -1,4 +1,4 @@
 const TitleOfPage = 'List of Publications';
 const NameOfMe = 'Taniuchi';
-const XMLFile = 'publist.xml';
+const XMLFile = 'RyoTaniPublist.xml';
 const StartYear = 2013;
